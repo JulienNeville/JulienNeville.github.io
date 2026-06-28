@@ -1,0 +1,14 @@
+title: Ensemble Jadis
+description: "La page web de l'ensemble Jadis"
+lang: fr
+timezone: Europe/Paris
+url: ""
+baseurl: ""
+
+remote_theme: ItsPatrq/minimal-categorized
+
+plugins:
+  - jekyll-remote-theme
+
+markdown: kramdown
+permalink: pretty

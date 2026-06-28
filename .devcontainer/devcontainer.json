@@ -1,0 +1,23 @@
+{
+  "name": "Ensemble Jadis - Jekyll",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [4000],
+  "portsAttributes": {
+    "4000": {
+      "label": "Jekyll",
+      "onAutoForward": "openPreview",
+      "visibility": "private"
+    }
+  },
+  "postCreateCommand": "bundle install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Shopify.ruby-lsp",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  }
+}

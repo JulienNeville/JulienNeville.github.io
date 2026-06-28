@@ -1,0 +1,125 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+:root {
+  --jadis-bordeaux: #5a2026;
+  --jadis-or: #b3945d;
+  --jadis-creme: #f6f0e6;
+  --jadis-encre: #1d1816;
+  --jadis-brun: #6d5a4d;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--jadis-creme);
+  color: var(--jadis-encre);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--jadis-bordeaux);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--jadis-or);
+}
+
+.site-title,
+.page-link,
+.post-link,
+h1,
+h2,
+h3,
+h4 {
+  color: var(--jadis-bordeaux);
+}
+
+.wrapper,
+.page-content {
+  max-width: 960px;
+}
+
+.site-header {
+  border-top: 6px solid var(--jadis-bordeaux);
+  border-bottom: 1px solid rgba(90, 32, 38, 0.12);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.site-footer {
+  border-top: 1px solid rgba(90, 32, 38, 0.12);
+}
+
+.hero {
+  padding: 2.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(90, 32, 38, 0.15);
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  max-width: 42rem;
+  color: var(--jadis-brun);
+}
+
+.cta-links {
+  margin-top: 1.25rem;
+}
+
+.cta-links a {
+  display: inline-block;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--jadis-bordeaux);
+  text-decoration: none;
+  background: transparent;
+}
+
+.cta-links a:hover {
+  background: var(--jadis-bordeaux);
+  color: #fff;
+}
+
+.section-note {
+  font-style: italic;
+  color: var(--jadis-brun);
+}
+
+.concert-item,
+.record-item,
+.news-item {
+  margin: 1.25rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(90, 32, 38, 0.12);
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--jadis-or);
+  color: var(--jadis-brun);
+  font-style: italic;
+}
+
+strong {
+  color: var(--jadis-encre);
+}
+
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+  }
+}
