@@ -12,3 +12,4 @@ plugins:
 
 markdown: kramdown
 permalink: pretty
+livereload: true
